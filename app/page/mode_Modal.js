@@ -91,15 +91,9 @@ export default class ModelDemo extends Component {
           onOpened={this.onOpen}
           onClosingState={this.onClosingState}
           entry='top'
-          isOpen={true}
-
-          // backdrop={false}
           backdropOpacity={0.1}
           backdropColor='red'
           backButtonClose={true}
-          // coverScreen={true}
-          // startOpen={true}
-          // backdropPressToClose={false}
           position={"top"}
           >
           <Text style={[styles.text, {color: "white"}]}>Modal on top</Text>
