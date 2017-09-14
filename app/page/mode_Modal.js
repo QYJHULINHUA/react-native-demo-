@@ -5,6 +5,7 @@ import {
   Text,
   View,
   Button,
+  TextInput
 } from 'react-native';
 
 import Modal from 'react-native-modalbox';
@@ -16,6 +17,7 @@ export default class ModelDemo extends Component {
     super();
     this.state={
       swipeToClose: true,
+      isDisabled: false,
     }
   }
 
@@ -61,9 +63,6 @@ export default class ModelDemo extends Component {
         {this._renderBtutton('Basic_modal')}
         {this._renderBtutton('Position_top')}
         {this._renderBtutton('Position_centered_backdrop_disable')}
-        {this._renderBtutton('Position_bottom_backdrop_slider')}
-        {this._renderBtutton('Backdrop_backdropContent')}
-        {this._renderBtutton('Position_bottom_ScrollView')}
         {this._renderBtutton('Modal_with_keyboard_support')}
 
         <Modal
@@ -105,9 +104,26 @@ export default class ModelDemo extends Component {
           </Text>
         </Modal>
 
+        <Modal
+          style={[styles.modal, styles.modal3]}
+          position={"center"}
+          ref={"Position_centered_backdrop_disable"}
+          isDisabled={this.state.isDisabled}>
+          <Text style={styles.text}>Position_centered_backdrop_disable</Text>
+          <Text
+            onPress={() => this.setState({isDisabled: !this.state.isDisabled})}
+            style={styles.btn}>Disable ({this.state.isDisabled ? "true" : "false"})
+          </Text>
+        </Modal>
 
-
-
+        <Modal
+          ref={"Modal_with_keyboard_support"}
+          style={[styles.modal, styles.modal4]}
+          position={"bottom"}>
+          <View>
+            <TextInput style={{height: 50, width: 200, backgroundColor: '#DDDDDD'}}/>
+          </View>
+        </Modal>
       </View>
     );
   }
@@ -135,5 +151,12 @@ const styles = StyleSheet.create({
   modal2: {
     height: 230,
     backgroundColor: "#3B5998"
+  },
+  modal3: {
+   height: 300,
+   width: 300
+ },
+ modal4: {
+    height: 300
   },
 });
