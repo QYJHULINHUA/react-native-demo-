@@ -35,6 +35,8 @@ export default class HomeScreen extends React.Component {
     }else if (keyStr === '百度地图') {
 
       navigate('BaiduMap');
+    }else if (keyStr === 'DatePicker') {
+      navigate('DatePickerDemo')
     }
     console.log(keyStr);
   }
@@ -58,7 +60,7 @@ export default class HomeScreen extends React.Component {
       {key:'1',title:'banaer轮播图'},
       {key:'2',title:'pop Modal'},
       {key:'3',title:'百度地图'},
-      {key:'4',title:'444'},
+      {key:'4',title:'DatePicker'},
       {key:'5',title:'555'},
     ]
     return (
