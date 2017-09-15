@@ -5,11 +5,12 @@
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest",
-		"bundle-ios":"node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js  --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle"
+		"bundle-ios": "node node_modules/react-native/local-cli/cli.js bundle --entry-file index.ios.js  --platform ios --dev false --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle"
 	},
 	"dependencies": {
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.48.2",
+		"react-native-baidu-map": "^0.6.0",
 		"react-native-modalbox": "^1.4.2",
 		"react-navigation": "^1.0.0-beta.11"
 	},

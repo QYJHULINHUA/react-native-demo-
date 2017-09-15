@@ -11,11 +11,15 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import "RCTBaiduMapViewManager.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  
+  
+  
   NSURL *jsCodeLocation;
   
   #ifdef DEBUG
@@ -26,6 +30,7 @@
     jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"bundle/index.ios" withExtension:@"jsbundle"];
   #endif
 
+  [RCTBaiduMapViewManager initSDK:@"NR3XLx6keHd26FEi7xeuzfWTifDH5TGG"];
   
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation

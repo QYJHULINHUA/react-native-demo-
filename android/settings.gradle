@@ -1,3 +1,8 @@
 rootProject.name = 'bannerDemo'
+include ':react-native-baidu-map'
+project(':react-native-baidu-map').projectDir = new File(settingsDir, '../node_modules/react-native-baidu-map/android')
+
+//include ':react-native-pdf'
+//project(':react-native-pdf').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-pdf/android')
 
 include ':app'

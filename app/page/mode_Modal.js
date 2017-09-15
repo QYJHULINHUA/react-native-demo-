@@ -10,7 +10,6 @@ import {
 
 import Modal from 'react-native-modalbox';
 
-
 export default class ModelDemo extends Component {
 
   constructor(){

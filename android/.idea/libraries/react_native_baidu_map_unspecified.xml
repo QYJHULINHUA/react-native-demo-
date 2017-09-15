@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="react-native-baidu-map-unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/bannerDemo/react-native-baidu-map/unspecified/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/bannerDemo/react-native-baidu-map/unspecified/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

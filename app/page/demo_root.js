@@ -24,12 +24,17 @@ export default class HomeScreen extends React.Component {
   };
 
   _onPressItem(keyStr:string){
+    const { navigate } = this.props.navigation;
+
     if (keyStr === 'banaer轮播图') {
-      const { navigate } = this.props.navigation;
+
       navigate('bannerDemo');
     }else if (keyStr === 'pop Modal') {
-      const { navigate } = this.props.navigation;
+
       navigate('ModelDemo');
+    }else if (keyStr === '百度地图') {
+
+      navigate('BaiduMap');
     }
     console.log(keyStr);
   }
@@ -52,7 +57,7 @@ export default class HomeScreen extends React.Component {
     let listData = [
       {key:'1',title:'banaer轮播图'},
       {key:'2',title:'pop Modal'},
-      {key:'3',title:'333'},
+      {key:'3',title:'百度地图'},
       {key:'4',title:'444'},
       {key:'5',title:'555'},
     ]
