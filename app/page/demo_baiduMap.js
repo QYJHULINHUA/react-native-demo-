@@ -1,42 +1,4 @@
 
-// import React, { Component } from 'react';
-// import {
-//   StyleSheet,
-//   Text,
-//   View
-// } from 'react-native';
-//
-// import {
-//   MapView,
-//   MapTypes,
-//   Geolocation
-// } from 'react-native-baidu-map';
-//
-// export default class BaiduMap extends Component {
-//
-//
-//   render() {
-//     return (
-//       <View style={styles.container}>
-//         <Text>百度地图</Text>
-//       </View>
-//     );
-//   }
-// }
-//
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     justifyContent:'center',
-//     alignItems:'center',
-//     backgroundColor: '#F5FCFF',
-//   },
-// });
-
-/**
- * @author lovebing
- */
-
 import React, {
   Component,
   PropTypes
@@ -80,7 +42,7 @@ export default class BaiduMap extends Component {
       },{
         longitude: 113.995516,
         latitude: 22.537642,
-        title: ""
+        title: "阿怂啊巨大空间的；了"
       }]
     };
   }
@@ -89,6 +51,8 @@ export default class BaiduMap extends Component {
   }
 
   render() {
+
+    let lat = 31.262587,lng = 121.609851;
     return (
       <View style={styles.container}>
         <MapView
@@ -100,44 +64,57 @@ export default class BaiduMap extends Component {
           marker={this.state.marker}
           markers={this.state.markers}
           style={styles.map}
+          onMapDoubleClick={(e)=>{
+            console.log('onMapDoubleClick',e);
+          }}
+          onMapLoaded={(e)=>{
+            console.log('onMapLoaded',e);
+          }}
           onMarkerClick={(e) => {
-            console.warn(JSON.stringify(e));
+            console.log('onMarkerClick',e);
+          }}
+          onMapPoiClick={(e)=>{
+            console.log('onMapPoiClick',e);
           }}
           onMapClick={(e) => {
+            console.log('onMapClick',e);
+
+          }}
+          onMapStatusChange={(e)=>{
+            console.log('jjonMapStatusChange',e);
           }}
         >
         </MapView>
 
         <View style={styles.row}>
-          <Button title="Normal" onPress={() => {
-            this.setState({
-              mapType: MapTypes.NORMAL
-            });
+          <Button title="reverseGeoCode" onPress={() => {
+
+            Geolocation.reverseGeoCode(lat,lng)
+              .then(data => {
+                console.log('reverseGeoCode',data);
+              })
+              .catch(e =>{
+                console.warn(e, 'error');
+              })
+
           }} />
-          <Button style={styles.btn} title="Satellite" onPress={() => {
-            this.setState({
-              mapType: MapTypes.SATELLITE
-            });
+          <Button style={styles.btn} title="reverseGeoCodeGPS" onPress={() => {
+
+            Geolocation.reverseGeoCodeGPS(lat,lng)
+              .then(data => {
+                console.log('reverseGeoCodeGPS',data);
+              })
+              .catch(e =>{
+                console.warn(e, 'error');
+              })
+
           }} />
 
           <Button style={styles.btn} title="Locate" onPress={() => {
-            console.warn('center', this.state.center);
+
             Geolocation.getCurrentPosition()
               .then(data => {
-                console.warn(JSON.stringify(data));
-                this.setState({
-                  zoom: 15,
-                  marker: {
-                    latitude: data.latitude,
-                    longitude: data.longitude,
-                    title: 'Your location'
-                  },
-                  center: {
-                    latitude: data.latitude,
-                    longitude: data.longitude,
-                    rand: Math.random()
-                  }
-                });
+                console.log('getCurrentPosition',data);
               })
               .catch(e =>{
                 console.warn(e, 'error');
@@ -146,17 +123,18 @@ export default class BaiduMap extends Component {
         </View>
 
         <View style={styles.row}>
-          <Button title="Zoom+" onPress={() => {
-            this.setState({
-              zoom: this.state.zoom + 1
-            });
+          <Button title="geocode" onPress={() => {
+
+            Geolocation.geocode('上海市','杨高中路')
+              .then(data => {
+                console.log('geocode',data);
+              })
+              .catch(e =>{
+                console.warn(e, 'error');
+              })
+
           }} />
-          <Button title="Zoom-" onPress={() => {
-            if(this.state.zoom > 0) {
-              this.setState({
-                zoom: this.state.zoom - 1
-              });
-            }
+          <Button title="废弃按钮" onPress={() => {
 
           }} />
         </View>

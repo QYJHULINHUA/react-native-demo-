@@ -36,5 +36,8 @@ react-native demo 集合
 
 		react-native-modalbox 的使用，[使用介绍请点击这里](https://my.oschina.net/KJhulinhua/blog/1536740)
 
-	* demo3--百度地图（待添加文档）
+	* demo3--百度地图
+		
+		react-native-baidu-map 的使用，[使用介绍请点击这里](https://my.oschina.net/KJhulinhua/blog/1539317)
+		
 	* demo4--ios原生的日期选择器demo（速度还行，但是没有什么出彩的地方，只是使用了一下）
