@@ -7,6 +7,8 @@ import bannerDemo from './app/page/demo_banner'
 import ModelDemo from './app/page/mode_Modal'
 import BaiduMap from './app/page/demo_baiduMap.js'
 import DatePickerDemo from './app/page/demo_datePicker'
+import DemoJudgment from './app/page/demo_judgmen'
+
 
 
 export default SimpleApp = StackNavigator({
@@ -15,4 +17,5 @@ export default SimpleApp = StackNavigator({
   ModelDemo: { screen: ModelDemo},
   BaiduMap:{screen:BaiduMap},
   DatePickerDemo:{screen:DatePickerDemo},
+  DemoJudgment:{screen:DemoJudgment},
 });
