@@ -30,10 +30,13 @@ export default class DemoJudgment extends Component {
     this._isArray = this._isArray.bind(this);
     this._isNull_Undefined = this._isNull_Undefined.bind(this);
     this._isString = this._isString.bind(this);
+    this._isObject = this._isObject.bind(this);
 
-    this.arrayDataIdx = 0,
-    this.nullDataIdx = 0,
-    this.stringDataIdx = 0,
+
+    this.arrayDataIdx = 0;
+    this.nullDataIdx = 0;
+    this.stringDataIdx = 0;
+    this.objDataIdx = 0;
 
     this.state = {
 
@@ -128,6 +131,42 @@ export default class DemoJudgment extends Component {
     console.log(strTestData , (isOk?'有效字符串':'无效字符串或者不是字符串'));
 
   }
+
+  _isObject(){
+
+    let idx = this.objDataIdx%7;
+    let objTestData ;
+    this.objDataIdx = this.objDataIdx + 1;
+    switch (idx) {
+      case 0:
+
+        break;
+      case 1:
+        objTestData = null;
+        break;
+      case 2:
+        objTestData = {};
+        break;
+      case 3:
+        objTestData = {key1:'11'};
+        break;
+      case 4:
+        objTestData = '{key1:"11as"}';
+        break;
+      case 5:
+        objTestData = [];
+        break;
+      case 6:
+        objTestData = 12;
+        break;
+      default:
+
+    }
+
+    let isOk = isObject(objTestData);
+    console.log(objTestData , (isOk?'是 Object 类型':'不是 Object 类型'));
+  }
+
   _clickBtn(btnStr:string){
     switch (btnStr) {
       case 'isNull?':
@@ -140,6 +179,10 @@ export default class DemoJudgment extends Component {
 
       case 'isString?':
         this._isString();
+        break;
+
+      case 'isObject?':
+        this._isObject();
         break;
       default:
       console.log('后面的不愿意写了，复制黏贴的东西自己实现去咯');
@@ -173,12 +216,7 @@ export default class DemoJudgment extends Component {
           {this._renderBtn("isFunction?")}
           {this._renderBtn("isObject?")}
         </View>
-        <View style={{flex:1,justifyContent:'center',alignItems:'center',}}>
-
-        </View>
-        <View style={{flex:1,}}>
-
-        </View>
+        <View style={{flex:2,justifyContent:'center',alignItems:'center',}}/>
       </View>
     );
   }
