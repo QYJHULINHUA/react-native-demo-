@@ -10,6 +10,7 @@ import DatePickerDemo from './app/page/demo_datePicker'
 import DemoJudgment from './app/page/demo_judgmen'
 import DemoImageCache from './app/page/demo_imageCache'
 import DemoWebApi from './app/page/demo7_WebAPI'
+import AnimateView from './app/page/demo8_animate'
 
 
 
@@ -22,4 +23,5 @@ export default SimpleApp = StackNavigator({
   DemoJudgment:{screen:DemoJudgment},
   DemoImageCache:{screen:DemoImageCache},
   DemoWebApi:{screen:DemoWebApi},
+  AnimateView:{screen:AnimateView},
 });

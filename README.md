@@ -47,3 +47,12 @@ react-native demo 集合
 		使用方便，代码简单易懂！ 
 		
 		在做项目的时候，因数据交互，或者代码原因 很多时候数据类型及其是否存在很难把控。往往我们需要做一些判断，为了提高代码的重用率，保证代码的稳健型，及方便维护。demo5把这些东西专门整理了一下，也会继续维护。
+		
+	* demo6-图片缓存
+
+			react-native-cached-image
+			react-native-image-fallback
+			react-native-ximage
+			react-native-web-image
+			
+	* demo7-微信sdk			
