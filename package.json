@@ -10,8 +10,10 @@
 	"dependencies": {
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.48.2",
+		"react-native-actionsheet": "^2.3.0",
 		"react-native-baidu-map": "^0.6.0",
 		"react-native-modalbox": "^1.4.2",
+		"react-native-wx": "^3.0.3",
 		"react-navigation": "^1.0.0-beta.11"
 	},
 	"devDependencies": {

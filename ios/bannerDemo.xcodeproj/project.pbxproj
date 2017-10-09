@@ -35,6 +35,7 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* bannerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* bannerDemoTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		6664EAE5D3B6495AA77C9119 /* libRCTWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AA760D13D240029DB833F0 /* libRCTWeChat.a */; };
 		76190F181F6A954700564B57 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76190F171F6A954700564B57 /* CoreLocation.framework */; };
 		76190F3A1F6A955500564B57 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76190F391F6A955500564B57 /* QuartzCore.framework */; };
 		76190F3C1F6A956100564B57 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76190F3B1F6A956100564B57 /* OpenGLES.framework */; };
@@ -54,6 +55,9 @@
 		7627FE3C1F6B674F006A82E0 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7627FE351F6B674F006A82E0 /* BaiduMapAPI_Utils.framework */; };
 		7627FE631F6B6CFE006A82E0 /* libRCTBaiduMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7627FE621F6B6C7C006A82E0 /* libRCTBaiduMap.a */; };
 		7659CEF81F690408008FB3B8 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7659CEF71F690408008FB3B8 /* bundle */; };
+		76E661F61F8B43D000400669 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E661F51F8B43D000400669 /* libsqlite3.tbd */; };
+		76E661F81F8B43E000400669 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E661F71F8B43E000400669 /* libc++.tbd */; };
+		76E661FA1F8B43E800400669 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E661F91F8B43E800400669 /* libz.tbd */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
@@ -276,6 +280,13 @@
 			remoteGlobalIDString = ADD01A681E09402E00F6D226;
 			remoteInfo = "RCTBlob-tvOS";
 		};
+		76E661F31F8B2AAD00400669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D55652A27F2D4CE0BB7D288C /* RCTWeChat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86D238421BD0BB9E00C75D01;
+			remoteInfo = RCTWeChat;
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -301,6 +312,7 @@
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		00AA760D13D240029DB833F0 /* libRCTWeChat.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTWeChat.a; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
 		00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTGeolocation.xcodeproj; path = "../node_modules/react-native/Libraries/Geolocation/RCTGeolocation.xcodeproj"; sourceTree = "<group>"; };
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
@@ -341,9 +353,13 @@
 		7627FE351F6B674F006A82E0 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
 		7627FE5D1F6B6C7C006A82E0 /* RCTBaiduMap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBaiduMap.xcodeproj; path = "../node_modules/react-native-baidu-map/ios/RCTBaiduMap.xcodeproj"; sourceTree = "<group>"; };
 		7659CEF71F690408008FB3B8 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
+		76E661F51F8B43D000400669 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		76E661F71F8B43E000400669 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		76E661F91F8B43E800400669 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		D55652A27F2D4CE0BB7D288C /* RCTWeChat.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTWeChat.xcodeproj; path = "../node_modules/react-native-wx/ios/RCTWeChat.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,9 +375,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76190F461F6A95DC00564B57 /* CoreTelephony.framework in Frameworks */,
+				76E661FA1F8B43E800400669 /* libz.tbd in Frameworks */,
+				76E661F81F8B43E000400669 /* libc++.tbd in Frameworks */,
+				76E661F61F8B43D000400669 /* libsqlite3.tbd in Frameworks */,
 				7627FE631F6B6CFE006A82E0 /* libRCTBaiduMap.a in Frameworks */,
 				76190F481F6A95E400564B57 /* libstdc++.6.0.9.tbd in Frameworks */,
-				76190F461F6A95DC00564B57 /* CoreTelephony.framework in Frameworks */,
 				76190F441F6A95D500564B57 /* libsqlite3.0.tbd in Frameworks */,
 				7627FE381F6B674F006A82E0 /* BaiduMapAPI_Location.framework in Frameworks */,
 				76190F421F6A95CD00564B57 /* Security.framework in Frameworks */,
@@ -389,6 +408,7 @@
 				7627FE361F6B674F006A82E0 /* BaiduMapAPI_Base.framework in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				6664EAE5D3B6495AA77C9119 /* libRCTWeChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +560,9 @@
 		76190F161F6A954700564B57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76E661F91F8B43E800400669 /* libz.tbd */,
+				76E661F71F8B43E000400669 /* libc++.tbd */,
+				76E661F51F8B43D000400669 /* libsqlite3.tbd */,
 				76190F471F6A95E400564B57 /* libstdc++.6.0.9.tbd */,
 				76190F451F6A95DC00564B57 /* CoreTelephony.framework */,
 				76190F431F6A95D500564B57 /* libsqlite3.0.tbd */,
@@ -557,6 +580,22 @@
 			isa = PBXGroup;
 			children = (
 				7627FE621F6B6C7C006A82E0 /* libRCTBaiduMap.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76E661CF1F8B2AAB00400669 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				00AA760D13D240029DB833F0 /* libRCTWeChat.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		76E661F01F8B2AAC00400669 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76E661F41F8B2AAD00400669 /* libRCTWeChat.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -586,6 +625,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				D55652A27F2D4CE0BB7D288C /* RCTWeChat.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -615,6 +655,7 @@
 				00E356EF1AD99517003FC87E /* bannerDemoTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				76190F161F6A954700564B57 /* Frameworks */,
+				76E661CF1F8B2AAB00400669 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -722,7 +763,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -803,6 +844,10 @@
 				{
 					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
 					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 76E661F01F8B2AAC00400669 /* Products */;
+					ProjectRef = D55652A27F2D4CE0BB7D288C /* RCTWeChat.xcodeproj */;
 				},
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
@@ -1023,6 +1068,13 @@
 			remoteRef = 7659CEE71F6903E0008FB3B8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		76E661F41F8B2AAD00400669 /* libRCTWeChat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWeChat.a;
+			remoteRef = 76E661F31F8B2AAD00400669 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1185,9 +1237,17 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-wx/ios/**",
+				);
 				INFOPLIST_FILE = bannerDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1203,9 +1263,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 2ST75BX3RV;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-wx/ios/**",
+				);
 				INFOPLIST_FILE = bannerDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1230,6 +1298,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React",
 					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/lib",
 					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap",
+					"$(SRCROOT)/../node_modules/react-native-wx/ios/**",
 				);
 				INFOPLIST_FILE = bannerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1239,6 +1308,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildcardJK.zhaoCai;
 				PRODUCT_NAME = bannerDemo;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1258,6 +1328,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React",
 					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/lib",
 					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap",
+					"$(SRCROOT)/../node_modules/react-native-wx/ios/**",
 				);
 				INFOPLIST_FILE = bannerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1267,6 +1338,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wildcardJK.zhaoCai;
 				PRODUCT_NAME = bannerDemo;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1284,8 +1356,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-wx/ios/**",
+				);
 				INFOPLIST_FILE = "bannerDemo-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1310,8 +1390,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-wx/ios/**",
+				);
 				INFOPLIST_FILE = "bannerDemo-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1337,6 +1425,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "bannerDemo-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.bannerDemo-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
@@ -1358,6 +1450,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "bannerDemo-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.bannerDemo-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
