@@ -96,7 +96,7 @@ export default class DemoWebApi extends Component {
           shareHandlePress={this._shareHandlePress}
           ref={o => this.reactShare = o}
           style={{flex:1,}}>
-          <Text/>
+          <Text>请安装微信再来玩</Text>
         
           {this._renderBtn("微信登录")}
           {this._renderBtn("微信分享")}

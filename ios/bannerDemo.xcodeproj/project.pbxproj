@@ -36,6 +36,8 @@
 		2DCD954D1E0B4F2C00145EB5 /* bannerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* bannerDemoTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		6664EAE5D3B6495AA77C9119 /* libRCTWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AA760D13D240029DB833F0 /* libRCTWeChat.a */; };
+		761210731F8B653100087CC1 /* ModuleDemoA.m in Sources */ = {isa = PBXBuildFile; fileRef = 761210721F8B653100087CC1 /* ModuleDemoA.m */; };
+		761210761F8B746200087CC1 /* ModuleDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 761210751F8B746200087CC1 /* ModuleDemoView.m */; };
 		76190F181F6A954700564B57 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76190F171F6A954700564B57 /* CoreLocation.framework */; };
 		76190F3A1F6A955500564B57 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76190F391F6A955500564B57 /* QuartzCore.framework */; };
 		76190F3C1F6A956100564B57 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76190F3B1F6A956100564B57 /* OpenGLES.framework */; };
@@ -334,6 +336,10 @@
 		2D02E47B1E0B4A5D006451C7 /* bannerDemo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bannerDemo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* bannerDemo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bannerDemo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		761210711F8B653100087CC1 /* ModuleDemoA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleDemoA.h; sourceTree = "<group>"; };
+		761210721F8B653100087CC1 /* ModuleDemoA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleDemoA.m; sourceTree = "<group>"; };
+		761210741F8B746200087CC1 /* ModuleDemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleDemoView.h; sourceTree = "<group>"; };
+		761210751F8B746200087CC1 /* ModuleDemoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleDemoView.m; sourceTree = "<group>"; };
 		76190F171F6A954700564B57 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		76190F391F6A955500564B57 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		76190F3B1F6A956100564B57 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -517,6 +523,7 @@
 		13B07FAE1A68108700A75B9A /* bannerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7612104F1F8B64F100087CC1 /* ModuleIos */,
 				7659CEF71F690408008FB3B8 /* bundle */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -555,6 +562,17 @@
 				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7612104F1F8B64F100087CC1 /* ModuleIos */ = {
+			isa = PBXGroup;
+			children = (
+				761210711F8B653100087CC1 /* ModuleDemoA.h */,
+				761210721F8B653100087CC1 /* ModuleDemoA.m */,
+				761210741F8B746200087CC1 /* ModuleDemoView.h */,
+				761210751F8B746200087CC1 /* ModuleDemoView.m */,
+			);
+			path = ModuleIos;
 			sourceTree = "<group>";
 		};
 		76190F161F6A954700564B57 /* Frameworks */ = {
@@ -1179,7 +1197,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				761210761F8B746200087CC1 /* ModuleDemoView.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				761210731F8B653100087CC1 /* ModuleDemoA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

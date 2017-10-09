@@ -11,6 +11,7 @@ import DemoJudgment from './app/page/demo_judgmen'
 import DemoImageCache from './app/page/demo_imageCache'
 import DemoWebApi from './app/page/demo7_WebAPI'
 import AnimateView from './app/page/demo8_animate'
+import DemoIosModule from './app/page/demo9_IosModule.js'
 
 
 
@@ -24,4 +25,5 @@ export default SimpleApp = StackNavigator({
   DemoImageCache:{screen:DemoImageCache},
   DemoWebApi:{screen:DemoWebApi},
   AnimateView:{screen:AnimateView},
+  DemoIosModule:{screen:DemoIosModule},
 });

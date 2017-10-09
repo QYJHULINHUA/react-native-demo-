@@ -46,7 +46,9 @@ export default class HomeScreen extends React.Component {
       navigate('DemoWebApi')
     }
     else if (keyStr === 'demo8_reactNative动画') {
-      navigate('AnimateView')
+      navigate('AnimateView');
+    }else if (keyStr === 'demo9_ios原生模块') {
+      navigate('DemoIosModule');
     }
 
     console.log(keyStr);
@@ -75,7 +77,8 @@ export default class HomeScreen extends React.Component {
       {key:'5',title:'数据类型判断及判空'},
       {key:'6',title:'图片做本地缓存'},
       {key:'7',title:'微信SDK'},
-      {key:'8',title:'demo8_reactNative动画'}
+      {key:'8',title:'demo8_reactNative动画'},
+      {key:'9',title:'demo9_ios原生模块'},
     ]
     return (
       <View>
